@@ -1,0 +1,36 @@
+{{! On fait le CRUD avec le a HREF }}
+{{! on pique la classe de sa ROUTE Exple router.route('/user/:id') }}
+
+<h1> {{title}} </h1>
+<a href='/create' class='btn btn-primary mb-1'>Create User</a>
+
+<table class='table table-bordered'>
+  <thead>
+    <tr>
+      <th scope='col'>#</th>
+      <th scope='col'>Name</th>
+      <th scope='col'>Email</th>
+      <th scope='col'>Phone</th>
+      <th scope='col'>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+      <tr>
+
+        <td> {{this.id}} </td>
+        <td>{{this.name}} </td>
+        <td>{{this.email}}</td>
+        <td>{{this.phone}}</td>
+        <td>
+          <a href='/user/{{this.id}}' class='btn btn-primary'>view</a>
+          <a href='/edit/{{this.id}}' class='btn btn-success'>Edit</a>
+          <a href='/delete/{{this.id}}' class='btn btn-danger'>Delete</a>
+        </td>
+
+      </tr>
+
+    {{/each}}
+
+  </tbody>
+</table>

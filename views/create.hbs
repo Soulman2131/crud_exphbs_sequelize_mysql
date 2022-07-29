@@ -1,0 +1,18 @@
+<h1>{{title}} </h1>
+<a href='/' class='btn btn-primary'>All Users </a>
+<form action='/create' method='POST' class='mb-1'>
+  <div class='form-group'>
+    <label for='name'> Name </label>
+    <input type='text' name='name' class='form-control' value='{{name}}' />
+  </div>
+  <div class='form-group'>
+    <label for='email'> Email </label>
+    <input type='email' name='email' class='form-control' value='{{email}}' />
+  </div>
+  <div class='form-group'>
+    <label for='phone'> Phone </label>
+    <input type='text' name='phone' class='form-control' value='{{phone}} ' />
+  </div>
+
+  <button type='submit' class='btn btn-primary'>Send Create </button>
+</form>

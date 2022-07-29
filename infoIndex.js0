@@ -1,0 +1,7 @@
+Juste à cause de ça, j'ai perdu 3 jours de code
+ A mettre sur INDEX 
+ 💕👌
+ app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+ 💕👌
+  & à éviter de mettre app.use(bodyParser.json())

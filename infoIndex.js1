@@ -1,0 +1,43 @@
+TITRE : User Management Project(MVC) with Node Js, Express, Handlebars, MySQL, and Sequelize ORM
+=> https://www.youtube.com/watch?v=yJ6q3sh3zOs
+
+### INSTALLATION
+On va installer NPM INIT -Y puis les dépendances
+=> NPM I EXPRESS EXPRESS-HANDLEBARS  BODY-PARSER COLORS DOTENV
+
+=> puis en GLOBAL => NPM I SEQUELIZE  SEQUELIZE-CLI MYSQL2 -G 
+=> puis NPM I NODEMON -D 
+
+###
+On va faire le INDEX.JS 
+On va remplacer .handlebars par .hbs dans APP.ENGINE 
+Le schema de VIEWS se trouve => GITHUB EXPRESS HANDLEBARS 
+
+#
+On installe BOOTSTRAP CDN et on l'installe dans le HTML du MAIN && on prend également la copie de BOOTSTRAP JAVASCRIPT && on le mets dans le SRC d'un script du HTML/MAIN
+Puis BOOSTRAP TABLE-BORDERED & on prend la premiere TABLE
+ou sinon on installe  ✌️💕❤️ l'EXTENSION GREPPER ❤️💕✌️ puis on tape sur google BOOSTRAP TABLE-BORDERED 
+On écrit la copie sur HOME
+On BOOSTRAP FORM && on le met dans CREATE.HBS && EDIT.HBS
+On BOOSTRAP CARD && on le met sur USER.HBS & on lui donne un MT-5
+
+###
+On se SEQUELIZE INIT
+On se crée la table USERS 
+=> npx sequelize model:create --attributes "name:string email:string phone:string" --name Users
+
+###
+On fait la route et le Ctrl USERSCTRL
+Puis on met au CREATE.HBS au form '/create' method='POST' sans oublier de rajouter dans les input name="name" etc.
+&& au HOME.HBS le link a.href en haut
+Ce qui nous donne au BACK que le CREATE-USER aura un RES.REDIRECT && le DISPLAY RES.RENDER()
+
+✌️💕❤️ Attention-- toujours mettre STATIC apres le dossier APP.USE DU HANDLEBARS ✌️💕❤️
+
+###
+Ensuite on fait le CRUD (edit, etc. ) au USERSCTRL02 && au HOME03
+Pour le FRONT de l'EDIT, on aura deux routes à savoir GET: '/edit/:id' && POST: '/update/:id'
+
+
+
+
